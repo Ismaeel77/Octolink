@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
-    <link
-      rel="stylesheet"
-      href="/node_modules/keen-slider/keen-slider.min.css"
-    />
+    <link rel="stylesheet" href="./css/splide.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Octolink</title>
   </head>
@@ -292,54 +289,84 @@
         </div>
       </section>
       <section id="slider" class="text-center">
-        <h1>The only link in bio trusted by 50M+</h1>
-        <section class="pb-3">
-          <ul
-            id="titles-carousel"
-            class="keen-slider justify-content-center"
-            style="height: 80px"
-          >
-            <li class="keen-slider__slide">creators</li>
-            <li class="keen-slider__slide">influencers</li>
-            <li class="keen-slider__slide">small businesses</li>
-            <li class="keen-slider__slide">athletes</li>
-            <li class="keen-slider__slide">models</li>
-            <li class="keen-slider__slide">monetizers</li>
-            <li class="keen-slider__slide">fitness coaches</li>
-          </ul>
+        <h2>The only link in bio trusted by 50M+</h2>
+        <section id="titles-carousel" class="splide pb-3">
+          <div class="splide__track  splide__track--ttb">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <h2>athletes</h2>
+              </li>
+              <li class="splide__slide">
+                <h2>models</h2>
+              </li>
+              <li class="splide__slide">
+                <h2>monetizers</h2>
+              </li>
+              <li class="splide__slide">
+                <h2>health educators</h2>
+              </li>
+              <li class="splide__slide">
+                <h2>streamers</h2>
+              </li>
+              <li class="splide__slide">
+                <h2>vloggers</h2>
+              </li>
+            </ul>
+          </div>
         </section>
-        <section>
-          <div id="image-carousel" class="keen-slider py-5">
-            <div class="keen-slider__slide number-slide1">
-              <img src="./assets/slider-01.avif" alt="slider photo" />
-            </div>
-            <div class="keen-slider__slide number-slide2">
-              <img src="./assets/slider-02.avif" alt="slider photo" />
-            </div>
-            <div class="keen-slider__slide number-slide3">
-              <img src="./assets/slider-03.avif" alt="slider photo" />
-            </div>
-            <div class="keen-slider__slide number-slide4">
-              <img src="./assets/slider-04.avif" alt="slider photo" />
-            </div>
-            <div class="keen-slider__slide number-slide5">
-              <img src="./assets/slider-05.avif" alt="slider photo" />
-            </div>
-            <div class="keen-slider__slide number-slide1">
-              <img src="./assets/slider-01.avif" alt="slider photo" />
-            </div>
-            <div class="keen-slider__slide number-slide2">
-              <img src="./assets/slider-02.avif" alt="slider photo" />
-            </div>
-            <div class="keen-slider__slide number-slide3">
-              <img src="./assets/slider-03.avif" alt="slider photo" />
-            </div>
-            <div class="keen-slider__slide number-slide4">
-              <img src="./assets/slider-04.avif" alt="slider photo" />
-            </div>
-            <div class="keen-slider__slide number-slide5">
-              <img src="./assets/slider-05.avif" alt="slider photo" />
-            </div>
+        <section
+          id="image-carousel"
+          class="splide"
+          aria-label="Basic Structure Example"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="./assets/slider-01.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-02.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-03.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-04.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-05.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-01.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-02.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-03.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-04.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-05.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-01.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-02.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-03.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-04.avif" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/slider-05.avif" alt="" />
+              </li>
+            </ul>
           </div>
         </section>
       </section>
@@ -794,13 +821,16 @@
       <section id="last-section">
         <div class="container position-relative">
           <div class="flower-bg">
-            <img src="/assets/flower-bg.png" alt="">
+            <img src="/assets/flower-bg.png" alt="" />
           </div>
           <div class="person-bg">
-            <img src="/assets/person-bg.png" alt="">
+            <img src="/assets/person-bg.png" alt="" />
           </div>
           <div class="mb-5 pb-5 position-relative">
-            <h2 class="mb-5 text-center">Jumpstart your corner of the <br /> internet today</h2>
+            <h2 class="mb-5 text-center">
+              Jumpstart your corner of the <br />
+              internet today
+            </h2>
             <div class="d-flex justify-content-center align-items-center">
               <div class="gen-link">
                 <p>
@@ -920,7 +950,9 @@
                 </ul>
               </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap mt-4">
+            <div
+              class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap mt-4"
+            >
               <div class="mb-4 mb-md-0">
                 <div class="log-sgin-btns">
                   <button
@@ -939,12 +971,14 @@
                   </button>
                 </div>
               </div>
-              <div class="links-container d-flex justify-content-between align-items-center gap-2 gap-md-0 flex-wrap flex-lg-nowrap">
+              <div
+                class="links-container d-flex justify-content-between align-items-center gap-2 gap-md-0 flex-wrap flex-lg-nowrap"
+              >
                 <a class="main-btn" href="#">
-                  <img src="./assets/apple-store.png" alt="Apple store">
+                  <img src="./assets/apple-store.png" alt="Apple store" />
                 </a>
                 <a class="main-btn" href="#">
-                  <img src="./assets/google-play.png" alt="Google play">
+                  <img src="./assets/google-play.png" alt="Google play" />
                 </a>
                 <a href="#" data-color="#303541">
                   <i class="fa-brands fa-linkedin"></i>
@@ -962,14 +996,19 @@
             </div>
           </footer>
           <div class="linktree">
-            <img src="./assets/linktree.png" alt="linktree logo">
+            <img src="./assets/linktree.png" alt="linktree logo" />
           </div>
           <div class="flags mt-5 mb-5 d-flex justify-content-center gap-5">
-            <img src="./assets/flag-01.webp" alt="flag-01">
-            <img src="./assets/flag-02.webp" alt="flag-02">
+            <img src="./assets/flag-01.webp" alt="flag-01" />
+            <img src="./assets/flag-02.webp" alt="flag-02" />
           </div>
           <div class="copyright text-center">
-            <p>We acknowledge the Traditional Custodians of the land on which our office stands, The Wurundjeri people of the Kulin Nation, and pay our respects to Elders past, present and emerging. Linktree Pty Ltd (ABN 68 608 721 562), 1-9 Sackville st, Collingwood VIC 3066</p>
+            <p>
+              We acknowledge the Traditional Custodians of the land on which our
+              office stands, The Wurundjeri people of the Kulin Nation, and pay
+              our respects to Elders past, present and emerging. Linktree Pty
+              Ltd (ABN 68 608 721 562), 1-9 Sackville st, Collingwood VIC 3066
+            </p>
           </div>
         </div>
       </section>
@@ -977,42 +1016,41 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js.map"></script>
     <script src="./js/vanilla-tilt.min.js"></script>
-    <script src="/node_modules/keen-slider/keen-slider.js"></script>
+    <script src="./js/splide.min.js"></script>
+    <script src="./js/splide-extension-auto-scroll.min.js"></script>
     <script>
-      // Titles Slider
-      function titleSlider() {
-        var titleSlider = new KeenSlider("#titles-carousel", {
-          loop: true,
-          slides: {
-            origin: "center",
-            perView: 1,
-            spacing: 10,
+      function imageCarousel() {
+        const imageSplide = new Splide("#image-carousel", {
+          type: "loop",
+          drag: "free",
+          focus: "center",
+          perPage: 5,
+          autoScroll: {
+            speed: 1,
           },
-          vertical: true,
         });
+        imageSplide.mount();
       }
+      new Splide("#image-carousel").mount(window.splide.Extensions);
 
-      // Image Slider
-      function imgSlider() {
-        var animation = { duration: 5000, easing: (t) => t };
-        var imageSlider = new KeenSlider("#image-carousel", {
-          loop: true,
-          renderMode: "performance",
-          slides: { origin: "center", perView: 5, spacing: 10 },
-          drag: true,
-          created(s) {
-            s.moveToIdx(1 * 0.9, true, animation);
-          },
-          updated(s) {
-            s.moveToIdx(s.track.details.abs + 1 * 0.9, true, animation);
-          },
-          animationEnded(s) {
-            s.moveToIdx(s.track.details.abs + 1 * 0.9, true, animation);
+      function titleCarousel() {
+        const titleSplide = new Splide("#titles-carousel", {
+          type: "loop",
+          drag: "free",
+          focus: "center",
+          direction: 'ttb',
+          height   : '5rem',
+          perPage: 1,
+          autoScroll: {
+            speed: 1,
           },
         });
+        titleSplide.mount();
       }
-      titleSlider();
-      imgSlider();
+      new Splide("#titles-carousel").mount(window.splide.Extensions);
+
+      imageCarousel();
+      titleCarousel();
     </script>
     <script src="./js/main.js"></script>
   </body>

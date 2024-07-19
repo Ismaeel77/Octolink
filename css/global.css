@@ -84,6 +84,28 @@ header nav a{
 }
 /* End Header */
 
+#image-carousel .splide__slide {
+  width: fit-content !important;
+  height: 400px;
+}
+
+#image-carousel .splide__slide img {
+  cursor: pointer;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  padding: 5px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.splide__arrows,
+.splide__pagination {
+  display: none;
+}
+
 
 /* Start Last Section */
 .person-bg {

@@ -5,10 +5,7 @@
 .text h2,
 #link-bio div h2,
 #featured h2,
-#slider h2,
-.carousel-caption h3,
-#questions h2,
-#last-section h2{
+.carousel-caption h3{
   font-family: "Link Sans", "Arial Black", Arial, sans-serif;
   font-weight: 820;
   letter-spacing: -0.02em;
@@ -17,33 +14,9 @@
 
 #link-bio div h2,
 #featured h2,
-#slider h2,
 .carousel-caption h3 {
   font-size: clamp(28px, 8vmin, 56px);
-  color: rgb(30, 35, 48);
-}
-
-.gen-link {
-  display: flex;
-  align-items: center;
-  background: #fff;
-  padding: 19px 16px;
-  border-radius: 8px;
-  margin-inline-end: 5px;
-}
-
-.gen-link , .gen-link p {
-  color: var(--gray-color);
-}
-
-.gen-link input{
-  border: none;
-  padding: 0;
-  padding-inline-start: 0.25rem;
-}
-
-.gen-link input:focus {
-  box-shadow: none;
+  color: var(--dark-blue);
 }
 
 .img-collection {
@@ -72,7 +45,6 @@
 }
 
 #widgets,
-#slider,
 #link-bio,
 #featured,
 #testimonials {
@@ -167,14 +139,6 @@
   color: var(--dark-blue);
 }
 /* End Third-sec */
-
-/* Start Slider */
-#titles-carousel li h2 {
-  color: var(--light-blue);
-  font-size: 3.5rem;
-  font-weight: bold;
-}
-/* End Slider */
 
 /* Start Widgets */
 #widget-one,
@@ -282,110 +246,4 @@
   max-width: 100%;
 }
 /* End Feature */
-
-/* Start Testimonials */
-.carousel-item img {
-  width: calc(100% - 440px);
-  margin-inline: auto;
-}
-.carousel-caption {
-  position: relative;
-  right: 0;
-  left: 0;
-  padding-top: 2rem;
-  bottom: 0;
-  color: var(--dark-blue);
-  padding-inline: 90px;
-}
-
-.carousel-caption h3 {
-  margin-block: 10px 15px;
-}
-
-.carousel-caption p {
-  color: var(--gray-color);
-}
-
-.carousel-control-prev {
-  left: 50% !important;
-  top: 100% !important;
-  transform: translateX(-100%);
-}
-
-.carousel-control-next {
-  right: 50% !important;
-  top: 100% !important;
-  transform: translateX(100%);
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: transparent !important;
-  color: var(--gray-color);
-  width: fit-content;
-  height: fit-content;
-  padding: 15px 10px;
-}
-
-.carousel-control-prev > *,
-.carousel-control-next > * {
-  background-color: var(--gray-color) !important;
-}
-/* End Testimonials */
-
-/* Start Questions */
-#questions {
-  padding-block: var(--padding);
-  background-color: var(--red-color);
-}
-
-#questions h2{
-  color: var(--light-pink);
-  font-size: clamp(28px, 8vmin, 56px);
-}
-
-.accordion-item {
-  margin-bottom: 15px;
-  background: none;
-}
-
-.accordion {
-  --bs-accordion-border-color: none !important;
-}
-
-.accordion-body {
-  padding:20px 48px;
-  background-color: #51000f;
-  color: var(--light-pink);
-}
-
-.accordion button {
-  font-size: 1.5rem;
-  background-color: #51000f;
-  color: var(--light-pink);
-  border: transparent;
-  padding: 40px;
-}
-
-button.accordion-button:focus ,
-.accordion-button:not(.collapsed){
-  border: transparent;
-  color: var(--light-pink);
-  background-color: #51000f;
-  box-shadow: none;
-}
-
-.accordion-button::after {
-  color: var(--light-pink) !important;
-  background-image: none !important;
-  content: '\f078';
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-}
-
-.accordion p {
-  font-size: 1.25rem;
-}
-
-/* End Questions */
 

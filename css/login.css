@@ -1,0 +1,42 @@
+@import url('./global.css');
+
+section {
+  width: 50%;
+}
+
+
+a.logo {
+  width: 120px;
+  display: block;
+}
+
+input {
+  background-color: #f6f7f5 !important;
+}
+
+label {
+  color: var(--gray-color)!important;
+}
+
+form input[type="button"].main-btn {
+  background-color: var(--light-violet) !important;
+  color: white;
+}
+
+form input:disabled.main-btn {
+  background-color:#e0e2d9 !important;
+  color: #a8aaa2;
+}
+
+form a , a{
+  font-family: Inter, Helvetica, Arial, "system-ui", -apple-system !important;
+  color: var(--light-violet);
+  font-size: 14px;
+}
+
+a.main-btn {
+  text-decoration: none;
+  border:1px solid #e0e2d9;
+  background-color: white;
+  color: black;
+}

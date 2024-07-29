@@ -59,6 +59,39 @@ function featureNav() {
   window.addEventListener("scroll", onScroll);
 }
 
+function imageCarousel() {
+  const imageSplide = new Splide("#image-carousel", {
+    type: "loop",
+    drag: "free",
+    focus: "center",
+    perPage: 5,
+    autoScroll: {
+      speed: 1,
+    },
+  });
+  imageSplide.mount();
+  new Splide("#image-carousel").mount(window.splide.Extensions);
+}
+
+function titleCarousel() {
+  const titleSplide = new Splide("#titles-carousel", {
+    type: "loop",
+    drag: "free",
+    focus: "center",
+    direction: "ttb",
+    height: "5rem",
+    perPage: 1,
+    autoScroll: {
+      speed: 1,
+    },
+  });
+  titleSplide.mount();
+  new Splide("#titles-carousel").mount(window.splide.Extensions);
+}
+
+imageCarousel();
+titleCarousel();
+
 handleHovers(btns);
 handleHovers(navlinks);
 handleScroll();

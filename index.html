@@ -380,6 +380,56 @@
                   </div>
                 </div>
               </li>
+              <li class="splide__slide">
+                <div class="box">
+                  <div class="face front">
+                    <img src="./assets/slider-01.avif" alt="" />
+                  </div>
+                  <div class="face back">
+                    <a href="./linksPage.html">Link</a>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="box">
+                  <div class="face front">
+                    <img src="./assets/slider-02.avif" alt="" />
+                  </div>
+                  <div class="face back">
+                    <a href="./linksPage.html">Link</a>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="box">
+                  <div class="face front">
+                    <img src="./assets/slider-03.avif" alt="" />
+                  </div>
+                  <div class="face back">
+                    <a href="./linksPage.html">Link</a>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="box">
+                  <div class="face front">
+                    <img src="./assets/slider-04.avif" alt="" />
+                  </div>
+                  <div class="face back">
+                    <a href="./linksPage.html">Link</a>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="box">
+                  <div class="face front">
+                    <img src="./assets/slider-05.avif" alt="" />
+                  </div>
+                  <div class="face back">
+                    <a href="./linksPage.html">Link</a>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </section>
@@ -1032,40 +1082,6 @@
     <script src="./js/vanilla-tilt.min.js"></script>
     <script src="./js/splide.min.js"></script>
     <script src="./js/splide-extension-auto-scroll.min.js"></script>
-    <script>
-      function imageCarousel() {
-        const imageSplide = new Splide("#image-carousel", {
-          type: "loop",
-          drag: "free",
-          focus: "center",
-          perPage: 5,
-          autoScroll: {
-            speed: 1,
-          },
-        });
-        new Splide("#image-carousel").mount(window.splide.Extensions);
-        imageSplide.mount();
-      }
-
-      function titleCarousel() {
-        const titleSplide = new Splide("#titles-carousel", {
-          type: "loop",
-          drag: "free",
-          focus: "center",
-          direction: 'ttb',
-          height   : '5rem',
-          perPage: 1,
-          autoScroll: {
-            speed: 1,
-          },
-        });
-        new Splide("#titles-carousel").mount(window.splide.Extensions);
-        titleSplide.mount();
-      }
-
-      imageCarousel();
-      titleCarousel();
-    </script>
     <script src="./js/main.js"></script>
   </body>
 </html>

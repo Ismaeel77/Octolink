@@ -1,40 +1,46 @@
 @import url(https://db.onlinewebfonts.com/c/030bed0195cd98cd301bdd3e3a59f234?family=Link+Sans);
 @import url(https://db.onlinewebfonts.com/c/8984ea7fcbebdcfe77fbbc1b86e7cfe6?family=Arial+Black);
 @font-face {
-  font-family: "Link Sans", 'Arial Black';
+  font-family: "Link Sans", "Arial Black";
   src: url("https://db.onlinewebfonts.com/t/030bed0195cd98cd301bdd3e3a59f234.eot");
-  src: url("https://db.onlinewebfonts.com/t/030bed0195cd98cd301bdd3e3a59f234.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/030bed0195cd98cd301bdd3e3a59f234.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/030bed0195cd98cd301bdd3e3a59f234.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/030bed0195cd98cd301bdd3e3a59f234.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/030bed0195cd98cd301bdd3e3a59f234.svg#Link Sans")format("svg");
+  src: url("https://db.onlinewebfonts.com/t/030bed0195cd98cd301bdd3e3a59f234.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/030bed0195cd98cd301bdd3e3a59f234.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/030bed0195cd98cd301bdd3e3a59f234.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/030bed0195cd98cd301bdd3e3a59f234.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/030bed0195cd98cd301bdd3e3a59f234.svg#Link Sans")
+      format("svg");
 }
 
 :root {
-  --red-color:#780016;
-  --green-color:#254f1a;
-  --white-color:#f3f3f1;
-  --light-pink:#e9c0e9;
-  --yellow-color:#d2e823;
-  --violet-color:#502274;
-  --light-violet:#8129d9;
-  --gray-color:#676b5f;
-  --dark-blue:#1e2330;
-  --light-blue:#2665d6;
-  --yellow-green:#bbbeac;
-  --orange-color:#ff6c02;
-  --border-color:#b69faf;
-  --dark-yellow:#fdc600;
-  --padding:128px;
+  --red-color: #780016;
+  --green-color: #254f1a;
+  --white-color: #f3f3f1;
+  --light-pink: #e9c0e9;
+  --yellow-color: #d2e823;
+  --violet-color: #502274;
+  --light-violet: #8129d9;
+  --gray-color: #676b5f;
+  --dark-blue: #1e2330;
+  --light-blue: #2665d6;
+  --yellow-green: #bbbeac;
+  --orange-color: #ff6c02;
+  --border-color: #b69faf;
+  --dark-yellow: #fdc600;
+  --padding: 128px;
 }
 
 /* Global Rules */
-body{
+body {
   font-family: "Link Sans", "Arial Black", Arial, sans-serif;
   overflow-x: hidden;
 }
 
-p,h3 {
+p,
+h3 {
   margin-bottom: 0;
 }
 
@@ -60,9 +66,9 @@ p,h3 {
 }
 
 #slider h2,
-#questions h2, 
+#questions h2,
 #last-section h2,
-.carousel-caption h3{
+.carousel-caption h3 {
   font-family: "Link Sans", "Arial Black", Arial, sans-serif;
   font-weight: 820;
   letter-spacing: -0.02em;
@@ -80,11 +86,12 @@ p,h3 {
   margin-inline-end: 5px;
 }
 
-.gen-link , .gen-link p {
+.gen-link,
+.gen-link p {
   color: var(--gray-color);
 }
 
-.gen-link input{
+.gen-link input {
   border: none;
   padding: 0;
   padding-inline-start: 0.25rem;
@@ -107,13 +114,13 @@ header {
   transition: opacity 0.6s ease-in;
 }
 
-header nav{
+header nav {
   background-color: #fff;
   margin-inline: auto;
   border-radius: 50px;
   padding: 20px 0;
 }
-header nav a{
+header nav a {
   border-radius: 15px;
 }
 
@@ -125,7 +132,7 @@ header nav a{
   border-radius: 16px;
   border: transparent;
 }
-.dropdown-menu[data-bs-popper] .dropdown-item{
+.dropdown-menu[data-bs-popper] .dropdown-item {
   color: var(--gray-color);
 }
 
@@ -133,7 +140,7 @@ header nav a{
 
 /* Start Slider */
 #slider {
-  background-color:var(--white-color) ;
+  background-color: var(--white-color);
   padding-bottom: var(--padding);
 }
 
@@ -148,7 +155,7 @@ header nav a{
   width: 400px !important;
 }
 
-#image-carousel .splide__slide .box{
+#image-carousel .splide__slide .box {
   position: relative;
   height: 100%;
   width: 100%;
@@ -162,7 +169,7 @@ header nav a{
   transform: rotateY(-180deg);
 }
 
-#image-carousel .splide__slide .box a{
+#image-carousel .splide__slide .box a {
   background-color: var(--white-color);
   color: var(--dark-blue);
   padding: 20px;
@@ -172,7 +179,7 @@ header nav a{
   text-decoration: none;
 }
 
-#image-carousel .splide__slide .box .face{
+#image-carousel .splide__slide .box .face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -181,7 +188,7 @@ header nav a{
   align-items: center;
 }
 
-#image-carousel .splide__slide .box .back{
+#image-carousel .splide__slide .box .back {
   transform: rotateY(180deg);
   backface-visibility: hidden;
 }
@@ -248,7 +255,7 @@ header nav a{
 }
 
 .carousel-control-prev span,
-.carousel-control-next span{
+.carousel-control-next span {
   background-color: var(--gray-color);
 }
 /* End Testimonials */
@@ -259,7 +266,7 @@ header nav a{
   background-color: var(--red-color);
 }
 
-#questions h2{
+#questions h2 {
   color: var(--light-pink);
 }
 
@@ -273,7 +280,7 @@ header nav a{
 }
 
 #questions .accordion-body {
-  padding:20px 48px;
+  padding: 20px 48px;
   background-color: #51000f;
   color: var(--light-pink);
 }
@@ -286,8 +293,8 @@ header nav a{
   padding: 40px;
 }
 
-#questions button.accordion-button:focus ,
-#questions .accordion-button:not(.collapsed){
+#questions button.accordion-button:focus,
+#questions .accordion-button:not(.collapsed) {
   border: transparent;
   color: var(--light-pink);
   background-color: #51000f;
@@ -297,7 +304,7 @@ header nav a{
 #questions .accordion-button::after {
   color: var(--light-pink) !important;
   background-image: none !important;
-  content: '\f078';
+  content: "\f078";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
 }
@@ -324,11 +331,11 @@ header nav a{
 }
 
 .person-bg img,
-.flower-bg img  {
+.flower-bg img {
   max-width: 100%;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .person-bg {
     left: -100px;
     top: 335px;
@@ -341,8 +348,8 @@ header nav a{
   }
 }
 
-@media (max-width:575px) {
-  .person-bg ,
+@media (max-width: 575px) {
+  .person-bg,
   .flower-bg {
     display: none;
   }
@@ -354,7 +361,7 @@ header nav a{
   overflow: hidden;
 }
 
-#last-section h2{
+#last-section h2 {
   color: var(--light-pink);
 }
 
@@ -374,7 +381,6 @@ footer {
   z-index: 50;
   margin-top: 200px;
 }
-
 
 footer .nav-link {
   padding-inline: 0 !important;
@@ -421,14 +427,13 @@ footer .links-container a {
   margin-top: 40px;
 }
 
-
 #last-section .linktree img {
   max-width: 100%;
   width: 500px;
   padding: 20px;
 }
 
-.flags img{
+.flags img {
   width: 100%;
   max-width: 100px;
 }

@@ -24,6 +24,7 @@
   --yellow-green:#bbbeac;
   --orange-color:#ff6c02;
   --border-color:#b69faf;
+  --dark-yellow:#fdc600;
   --padding:128px;
 }
 
@@ -46,6 +47,7 @@ p,h3 {
   padding: 14px 16px 16px;
   border-radius: 50px;
   border: none;
+  cursor: pointer;
 }
 
 #log-in {
@@ -142,16 +144,53 @@ header nav a{
 }
 
 #image-carousel .splide__slide {
-  width: fit-content !important;
   height: 400px;
+  width: 400px !important;
 }
 
-#image-carousel .splide__slide img {
-  cursor: pointer;
-  border-radius: 50px;
+#image-carousel .splide__slide .box{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: ease all 2.3s;
+  transform-origin: center center;
+}
+
+#image-carousel .splide__slide .box:hover {
+  transform: rotateY(-180deg);
+}
+
+#image-carousel .splide__slide .box a{
+  background-color: var(--white-color);
+  color: var(--dark-blue);
+  padding: 20px;
+  display: block;
+  width: 250px;
+  border-radius: 52px;
+  text-decoration: none;
+}
+
+#image-carousel .splide__slide .box .face{
+  position: absolute;
   width: 100%;
   height: 100%;
-  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-carousel .splide__slide .box .back{
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+#image-carousel .splide__slide .box .front img {
+  cursor: pointer;
+  border-radius: 50px;
+  max-width: 100%;
+  height: 100%;
   padding: 5px;
   object-fit: cover;
   object-position: center;

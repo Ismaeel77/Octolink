@@ -331,49 +331,54 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="./assets/slider-01.avif" alt="" />
+                <div class="box">
+                  <div class="face front">
+                    <img src="./assets/slider-01.avif" alt="" />
+                  </div>
+                  <div class="face back">
+                    <a href="./linksPage.html">Link</a>
+                  </div>
+                </div>
               </li>
               <li class="splide__slide">
-                <img src="./assets/slider-02.avif" alt="" />
+                <div class="box">
+                  <div class="face front">
+                    <img src="./assets/slider-02.avif" alt="" />
+                  </div>
+                  <div class="face back">
+                    <a href="./linksPage.html">Link</a>
+                  </div>
+                </div>
               </li>
               <li class="splide__slide">
-                <img src="./assets/slider-03.avif" alt="" />
+                <div class="box">
+                  <div class="face front">
+                    <img src="./assets/slider-03.avif" alt="" />
+                  </div>
+                  <div class="face back">
+                    <a href="./linksPage.html">Link</a>
+                  </div>
+                </div>
               </li>
               <li class="splide__slide">
-                <img src="./assets/slider-04.avif" alt="" />
+                <div class="box">
+                  <div class="face front">
+                    <img src="./assets/slider-04.avif" alt="" />
+                  </div>
+                  <div class="face back">
+                    <a href="./linksPage.html">Link</a>
+                  </div>
+                </div>
               </li>
               <li class="splide__slide">
-                <img src="./assets/slider-05.avif" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="./assets/slider-01.avif" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="./assets/slider-02.avif" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="./assets/slider-03.avif" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="./assets/slider-04.avif" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="./assets/slider-05.avif" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="./assets/slider-01.avif" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="./assets/slider-02.avif" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="./assets/slider-03.avif" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="./assets/slider-04.avif" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="./assets/slider-05.avif" alt="" />
+                <div class="box">
+                  <div class="face front">
+                    <img src="./assets/slider-05.avif" alt="" />
+                  </div>
+                  <div class="face back">
+                    <a href="./linksPage.html">Link</a>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -1038,9 +1043,9 @@
             speed: 1,
           },
         });
+        new Splide("#image-carousel").mount(window.splide.Extensions);
         imageSplide.mount();
       }
-      new Splide("#image-carousel").mount(window.splide.Extensions);
 
       function titleCarousel() {
         const titleSplide = new Splide("#titles-carousel", {
@@ -1054,9 +1059,9 @@
             speed: 1,
           },
         });
+        new Splide("#titles-carousel").mount(window.splide.Extensions);
         titleSplide.mount();
       }
-      new Splide("#titles-carousel").mount(window.splide.Extensions);
 
       imageCarousel();
       titleCarousel();

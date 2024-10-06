@@ -77,10 +77,12 @@ function titleCarousel() {
   const titleSplide = new Splide("#titles-carousel", {
     type: "loop",
     drag: "free",
-    focus: "center",
+    wheel:true,
     direction: "ttb",
-    height: "5rem",
+    height: "4rem",
+    gap:'1rem',
     perPage: 1,
+    autoplay: true,
     autoScroll: {
       speed: 1,
     },

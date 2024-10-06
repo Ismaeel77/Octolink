@@ -124,6 +124,17 @@ header nav a {
   border-radius: 15px;
 }
 
+header .navbar-brand {
+  width: 85px;
+}
+
+header .navbar-brand img{
+  max-width: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 .dropdown-menu[data-bs-popper] {
   top: 165%;
   left: 0;
@@ -420,16 +431,18 @@ footer .links-container a {
   color: #fff;
 }
 
-#last-section .linktree {
+#last-section .octolink {
   text-align: center;
   background-color: var(--light-pink);
   border-radius: 32px;
   margin-top: 40px;
 }
 
-#last-section .linktree img {
+#last-section .octolink img {
   max-width: 100%;
-  width: 500px;
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
   padding: 20px;
 }
 

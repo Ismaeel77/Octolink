@@ -4,10 +4,30 @@ section {
   width: 50%;
 }
 
+section:last-of-type {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  section:first-of-type {
+    width: 100%;
+  }
+
+  section:last-of-type {
+    display: none;
+  }
+}
+
 
 a.logo {
   width: 120px;
   display: block;
+}
+
+a.logo img{
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 input {
